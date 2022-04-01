@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="silva.jpeg" type="image/x-icon">
+    <title>JavaScript</title>
+    <style>
+
+        body{
+            background-color: blue;
+            background-image: url('iate.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            background-image: linear-gradient( to right, red, transparent);
+            padding: 20px;
+            margin: 20px;
+            font-size: 3em;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            background-image: linear-gradient( to right, rgb(140, 140, 206), transparent);
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando <abbr title="JavaScript">JS</abbr></h1>
+
+
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        // Para pedir o nome do usário..
+        document.write(`<h2> Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras. <br>`) //para colocar a quantidade de letras na tala. posso colocar dentro de TAGs tábem
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minúscula é ${nome.toLowerCase()}</h2>`)
+    </script>
+    </script>
+</body>
+</html>
