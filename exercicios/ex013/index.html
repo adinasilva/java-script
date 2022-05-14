@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/minha-logo.png" type="image/x-icon">
+    <title>Eventos DOM no JavaScript</title>
+    <style>
+        body {
+            background-color: rgb(56, 56, 27);
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.3em;
+        }
+        
+        div#area {
+            background-color: rgb(7, 40, 7);
+            margin: 30px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        a = document.getElementById('area') //Como o comando ao lado está fora da function ele serve para todas as functios da variavel 'a'...
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicado!'
+            a.style.background = 'rgb(14, 14, 59)'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'red'
+        }
+        function sair() {
+            a.innerText = 'saiu!'
+            a.style.background ='green'
+        }
+
+    </script>
+</body>
+
+</html>

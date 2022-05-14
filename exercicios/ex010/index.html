@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/minha-logo.png" type="image/x-icon">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(18, 18, 82);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+        }
+
+        div {
+            background-color: rgb(14, 14, 74);
+            color: white;
+            width: 160px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid;
+            margin: 20px;
+        }
+
+        div:hover {
+            background-color: rgb(13, 13, 59);
+            width: 160px;
+            padding: 13px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.374);
+            border: 3px solid;
+            font-weight: bolder;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p>Este es mi proyecto!</p>
+    <div class="mn">
+        <strong>Clique aqui</strong>
+    </div>
+    <script>
+    corpo = document.body
+    p1 = document.getElementsByTagName('p')[1]
+    d = document.querySelector('div.mn')
+    d.style.background = 'green'
+    // document.getElementById('mm').innerText = 'Oi'
+    //d.innerText = 'Estou aquai'
+    // d = document.getElementsByClassName('mn')[0]
+    // d.innerText = 'Bién venido'
+
+    </script>
+</body>
+</htm
