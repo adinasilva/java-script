@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/minha-logo.png" type="image/x-icon">
+    <title>Condições no JavaScript</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(17, 17, 55);
+            color: white;
+        }
+
+        input#n1v {
+            text-align: center;
+            width: 60px;
+            height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Sistema de Multas
+    </h1>
+    A velocidade do carro é de <input type="number" name="n1v" id="n1v"> km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+            v1 = document.getElementById('n1v')
+            v2 = Number(n1v.value)
+            res = document.getElementById('res')
+            res.innerHTML = `<p>A velocidade atual do carro é de: <strong>${v2} km/h.</strong></p>`
+            if (v2 > 60) {
+                res.innerHTML += `O motora, a tua velocidade está muito alta, tu quer morrer? já penssou?! <strong>${v2} km/h</strong>`
+            }
+            res.innerHTML += `<p>Dirija sempre usando o sinto de <strong>segurança!</strong> se não vai morrer!</p>`
+        }
+    </script>
+</body>
+
+</html>
